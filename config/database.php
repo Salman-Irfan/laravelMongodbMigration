@@ -92,15 +92,9 @@ return [
         ],
         'mongodb' => [
             'driver' => 'mongodb',
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', 27017),
-            'database' => env('DB_DATABASE', 'mongo'),
-            'username' => env('DB_USERNAME', 'salman'),
-            'password' => env('DB_PASSWORD', 'salman'),
-            'options' => [
-                'appname' => 'homestead',
-            ],
-        ],
+            'dsn' => env('DB_URI', 'mongodb+srv://salman:salman@cluster0.janiqtv.mongodb.net/?retryWrites=true&w=majority'),
+            'database' => 'mongo',
+]       ,
 
     ],
 
